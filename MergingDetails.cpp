@@ -57,7 +57,7 @@ class Solution {
         int n=details.size();
          DisjointSet ds(n);
         for(int i=0;i<n;i++){
-            for(int j=0;j<details[i].size;j++){
+            for(int j=1;j<details[i].size;j++){
                 string mail=details[i][j];
                 if(mailDetail.find(mail)==mailDetail.end()){
                     mailDetail[mail]=i;
@@ -85,3 +85,4 @@ class Solution {
         }
     }
 };
+// https://codeforces.com/contest/1770/problem/C
